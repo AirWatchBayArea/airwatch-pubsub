@@ -1,0 +1,23 @@
+{
+  "name": "airwatch_bayarea-api-pubsub",
+  "version": "1.0.0",
+  "description": "Air Watch Bay Area API and PUBSUB",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "Olukunle Abolade",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^3.0.0",
+    "nodemailer": "^4.6.8",
+    "pubsub": "^3.2.1",
+    "pubsub-js": "^1.7.0",
+    "redis": "^2.8.0",
+    "twilio": "^3.24.0"
+  }
+}

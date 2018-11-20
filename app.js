@@ -64,9 +64,8 @@ app.post('/user/add',function(req, res, next){
  let phone = req.body.phone;
  let pollution = req.body.pollution;
  let area = req.body.area;
- let id = "id:11";
-
-  client.hmset([id,
+ client.incr('id', function(err, id) {
+  client.hmset(id, [
   'email', email,
   'phone',phone,
   'pollution',pollution,
@@ -79,7 +78,7 @@ console.log(reply);
 res.redirect('/')
  });
 });
-
+});
 
 
 app.listen(port,function(){
